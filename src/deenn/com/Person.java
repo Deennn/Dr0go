@@ -2,16 +2,44 @@ package deenn.com;
 
 abstract class Person {
     private String name;
-    private int id;
-    private String email;
-    private String rank;
+    private String id;
+    private String Email;
+    private String qualification;
+    private boolean isGraduate;
+    private String Gender;
+    private String readyForInterview = "";
 
+    public Person(){}
+    public String getReadyForInterview() {
+        return readyForInterview;
+    }
 
-    public Person(String name, int id, String email, String rank) {
-        this.name = name;
-        this.id = id;
-        this.email = email;
-        this.rank = rank;
+    public void setReadyForInterview(String readyForInterview) {
+        this.readyForInterview = readyForInterview;
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+
+    public boolean isGraduate() {
+        return isGraduate;
+    }
+
+    public void setGraduate(boolean graduate) {
+        isGraduate = graduate;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String gender) {
+        Gender = gender;
     }
 
     public String getName() {
@@ -22,29 +50,32 @@ abstract class Person {
         this.name = name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        Email = email;
     }
 
-    public String getRank() {
-        return rank;
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", Email='" + Email + '\'' +
+                ", qualification='" + qualification + '\'' +
+                ", isGraduate=" + isGraduate +
+                ", readyForInterview=" + readyForInterview +
+                ", Gender='" + Gender + '\'' +
+                '}';
     }
-
-    public void setRank(String rank) {
-        this.rank = rank;
-    }
-
-
 }

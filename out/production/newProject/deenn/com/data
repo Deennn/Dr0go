@@ -1,0 +1,62 @@
+ public static void main(String[] args) {
+        Hr hr = new Hr();
+        Applicants app1 = new Applicants();
+        app1.setName("Lawal");
+        app1.setId("101");
+        app1.setEmail("lawal@gmail.com");
+        app1.setGraduate(true);
+        app1.setReadyForInterview("");
+        app1.setQualification("Msc");
+        app1.setGender("Male");
+
+        Applicants app2 = new Applicants();
+        app2.setName("Lawal2");
+        app2.setId("101");
+        app2.setEmail("lawal@gmail.com");
+        app2.setGraduate(true);
+        app2.setReadyForInterview("");
+        app2.setQualification("Bsc");
+        app2.setGender("Male");
+
+
+        Applicants app3 = new Applicants();
+        app3.setName("Lawal3");
+        app3.setId("101");
+        app3.setEmail("lawal@gmail.com");
+        app3.setGraduate(false);
+        app3.setReadyForInterview("");
+        app3.setQualification("olevel");
+        app3.setGender("Male");
+
+        List<Applicants> applicants = new ArrayList<>();
+        applicants.add(app1);
+        applicants.add(app2);
+        applicants.add(app3);
+
+        var newList = hr.receiveApplication(applicants);
+        System.out.println(newList);
+
+
+
+        Employee emp1 = new Employee();
+                emp1.setName("Lawal Deenn");
+                emp1.setId("101");
+                emp1.setEmail("lawal@gmail.com");
+                emp1.setGraduate(false);
+                emp1.setReadyForInterview("");
+                emp1.setQualification("olevel");
+                emp1.setGender("Male");
+        //        emp1.setOffense("Harassment");
+                emp1.setQuery(3);
+
+                Employee emp2 = new Employee();
+                emp2.setName("Almustapha");
+                emp2.setId("101");
+                emp2.setEmail("lawal@gmail.com");
+                emp2.setGraduate(false);
+                emp2.setReadyForInterview("");
+                emp2.setQualification("olevel");
+                emp2.setGender("Male");
+        //        emp2.setQuery(0);
+
+    }
