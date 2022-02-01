@@ -1,4 +1,4 @@
-package deenn.com;
+package dr0go.com;
 
 abstract class Person {
     private String name;

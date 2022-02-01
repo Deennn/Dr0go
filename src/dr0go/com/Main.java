@@ -1,4 +1,4 @@
-package deenn.com;
+package dr0go.com;
 import java.util.Scanner;
 
 public class Main {
