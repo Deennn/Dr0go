@@ -16,6 +16,7 @@ public class Main {
         System.out.println("2. Fire Employee");
         System.out.println("3. 0 to exit");
         return Integer.parseInt(scan.nextLine());
+//        commit
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
